@@ -40,7 +40,7 @@ server <- function(input, output, session) {
     mapboxgl(scrollZoom = FALSE,
              center = c(-97.7301093, 30.288647),
              zoom = 12, 
-             access_token = Sys.getenv("MAPBOX_ACCESS_TOKEN")
+             access_token = Sys.getenv("MAPBOX_ACCESS_TOKEN"))
   })
 
   on_section("map", "intro", {
