@@ -3,7 +3,7 @@ library(mapgl)
 library(mapboxapi)
 
 property <- c(-97.71326, 30.402550)
-isochrone <- mb_isochrone(property, profile = "driving", time = 20)
+isochrone <- mb_isochrone(property, profile = "driving", time = 20, access_token = Sys.getenv("MAPBOX_ACCESS_TOKEN"))
 
 ui <- fluidPage(
   tags$link(href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap", rel="stylesheet"),
