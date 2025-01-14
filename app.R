@@ -2,8 +2,6 @@ library(shiny)
 library(mapgl)
 library(mapboxapi)
 
-mb_access_token(MAPBOX_ACCESS_TOKEN)
-
 property <- c(-97.71326, 30.402550)
 isochrone <- mb_isochrone(property, profile = "driving", time = 20)
 
@@ -41,7 +39,8 @@ server <- function(input, output, session) {
   output$map <- renderMapboxgl({
     mapboxgl(scrollZoom = FALSE,
              center = c(-97.7301093, 30.288647),
-             zoom = 12)
+             zoom = 12, 
+             access_token = Sys.getenv("MAPBOX_ACCESS_TOKEN")
   })
 
   on_section("map", "intro", {
