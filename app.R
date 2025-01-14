@@ -2,7 +2,7 @@ library(shiny)
 library(mapgl)
 library(mapboxapi)
 
-mb_access_token("MAPBOX_ACCESS_TOKEN")
+mb_access_token(MAPBOX_ACCESS_TOKEN)
 
 property <- c(-97.71326, 30.402550)
 isochrone <- mb_isochrone(property, profile = "driving", time = 20)
