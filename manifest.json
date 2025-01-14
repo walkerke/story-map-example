@@ -1526,8 +1526,8 @@
       }
     },
     "mapgl": {
-      "Source": "github",
-      "Repository": null,
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
       "description": {
         "Package": "mapgl",
         "Title": "Interactive Maps with 'Mapbox GL JS' and 'MapLibre GL JS'",
@@ -1539,25 +1539,16 @@
         "BugReports": "https://github.com/walkerke/mapgl/issues",
         "License": "MIT + file LICENSE",
         "Encoding": "UTF-8",
-        "Roxygen": "list(markdown = TRUE)",
         "RoxygenNote": "7.3.2",
         "Imports": "htmlwidgets, geojsonsf, sf, rlang, htmltools, grDevices,\nbase64enc, terra, classInt, shiny",
         "Suggests": "mapboxapi, usethis, leaflet",
-        "RemoteType": "github",
-        "RemoteHost": "api.github.com",
-        "RemoteRepo": "mapgl",
-        "RemoteUsername": "walkerke",
-        "RemoteRef": "HEAD",
-        "RemoteSha": "d813582b007c6a5fd314326794aef6e95a95f7e2",
-        "GithubRepo": "mapgl",
-        "GithubUsername": "walkerke",
-        "GithubRef": "HEAD",
-        "GithubSHA1": "d813582b007c6a5fd314326794aef6e95a95f7e2",
         "NeedsCompilation": "no",
-        "Packaged": "2025-01-13 23:14:21 UTC; kylewalker",
+        "Packaged": "2025-01-13 20:34:20 UTC; kylewalker",
         "Author": "Kyle Walker [aut, cre]",
         "Maintainer": "Kyle Walker <kyle@walker-data.com>",
-        "Built": "R 4.4.2; ; 2025-01-13 23:14:22 UTC; unix"
+        "Repository": "CRAN",
+        "Date/Publication": "2025-01-13 21:00:02 UTC",
+        "Built": "R 4.4.1; ; 2025-01-14 01:54:23 UTC; unix"
       }
     },
     "memoise": {
